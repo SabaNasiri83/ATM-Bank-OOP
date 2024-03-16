@@ -37,6 +37,14 @@ public class Account {
 		}
 	}
 	
+	void showDate() {
+		Date currentDate = new Date();
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        String formattedDate = dateFormat.format(currentDate);
+        
+        System.out.println("Current Date and Time: " + formattedDate);
+	}
+	
 	void showMenu() {
 		char option = '\0';
 		Scanner scanner = new Scanner(System.in);
@@ -49,6 +57,7 @@ public class Account {
 		System.out.println("B. Make a deposit");
 		System.out.println("C. Make a withdraw");
 		System.out.println("D. View Pery Transaction");
+		System.out.println("E. Show Date");
 		System.out.println("E. Exit");
 		
 		
@@ -81,6 +90,10 @@ public class Account {
 			 	System.out.println("==========");
 				break;
 			case 'E':
+				System.out.println("==========");
+				showDate();
+			 	System.out.println("==========");
+			case 'F':
 				System.out.println("==========");
 				break;
 			default:
