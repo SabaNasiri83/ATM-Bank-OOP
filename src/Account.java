@@ -93,6 +93,7 @@ public class Account {
 				System.out.println("==========");
 				showDate();
 			 	System.out.println("==========");
+			 	break;
 			case 'F':
 				System.out.println("==========");
 				break;
